@@ -1,8 +1,9 @@
 # Day 1 problem 
+# Commented out code are 2nd challange
 with open("textfiles/problem1.txt") as fp:
     all_int = []
     pairs = []
-    # triples = []
+    # triples = [] 
     for num in fp:
         all_int.append(int(num))
         
