@@ -27,12 +27,12 @@ with open("textfiles/problem5.txt") as fp:
     for code in fp:
         boarding_ID.append(boarding_pass_decoder(str(code)))
         
-    print(max(boarding_ID))
+    print("Maximum boarding ID: {}".format(max(boarding_ID)))
     # Challenge 2
     ID = 31
     boarding_ID.sort()
     for i in range(len(boarding_ID)):
         ID += 1
         if boarding_ID[i] != ID:
-            print(ID)
+            print("My boarding ID: {}".format(ID))
             break
