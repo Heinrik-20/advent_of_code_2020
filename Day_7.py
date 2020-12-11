@@ -15,7 +15,7 @@ while queue:
             if (pattern in string) and (pattern != bag):
                 queue.append(bag)
                 
-print(len(found))
+print("Bags that can contain at least one {0}: {1}".format(main_bag,len(found)))
 
 # Solution to challenge 2
 # Uses Breadth First Search approach with LIFO (Stack)
@@ -41,4 +41,4 @@ while queue:
                                 queue.append(" ".join(string.split()[index + 1:index + 3]))
                         index += 1
 
-print(bags)
+print("Individual bags in one {0} bag: {1}".format(main_bag, bags))
