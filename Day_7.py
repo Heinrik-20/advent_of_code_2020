@@ -18,7 +18,7 @@ while queue:
 print("Bags that can contain at least one {0}: {1}".format(main_bag,len(found)))
 
 # Solution to challenge 2
-# Uses Breadth First Search approach with LIFO (Stack)
+# Uses Depth First Search approach with LIFO (Stack)
 bags = -1
 queue = []
 queue.append(main_bag)
